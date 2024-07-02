@@ -7,11 +7,9 @@ const Navbar = () => {
     { name: "Home", url: "/" },
     { name: "Service", url: "/service" },
     { name: "Resume", url: "/resume" },
-    { name: "Work", url: "/work" },
     { name: "Contact", url: "/contact" },
   ];
   const pathname = usePathname();
-  console.log(pathname, "Hello");
   return (
     <nav className=" flex gap-8">
       {navLinks.map((nav, index) => (

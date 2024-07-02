@@ -10,7 +10,6 @@ const MobileNav = () => {
     { name: "Home", url: "/" },
     { name: "Service", url: "/service" },
     { name: "Resume", url: "/resume" },
-    { name: "Work", url: "/work" },
     { name: "Contact", url: "/contact" },
   ];
   const pathname = usePathname();
