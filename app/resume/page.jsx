@@ -25,9 +25,9 @@ import {
 import { TooltipContent } from "@/components/ui/tooltip";
 
 const about = {
-  title: "",
+  title: "About Me",
   description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti odio illo dolore labore eligendi debitis quos voluptate excepturi ex magnam. Omnis non odio aperiam corrupti exercitationem! Dignissimos, optio? Cupiditate, exercitationem!",
+    "",
   info: [
     { fieldName: "Name", fieldValue: "Magesh" },
     { fieldName: "Stack", fieldValue: "Frontend Developer" },
@@ -35,7 +35,7 @@ const about = {
     { fieldName: "Phone", fieldValue: "+91 9345236199" },
     { fieldName: "Exprience", fieldValue: "1+ years" },
     { fieldName: "Nationality", fieldValue: "Indian" },
-    { fieldName: "Languages", fieldValue: "English ,Tamil" },
+    { fieldName: "Languages", fieldValue: "English, Tamil" },
   ],
 };
 
@@ -43,7 +43,7 @@ const exprience = {
   icon: batch,
   title: "My Exprience",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque possimus voluptas architecto molestiae reprehenderit omnis, error hic fuga inventore dicta officiis similique aut aliquam animi esse nostrum quaerat ipsum id!",
+    "👨‍💻 Experienced frontend developer with 2 years of industry expertise, including one year of internship and one year of full-time work. Specializing in React.js, Node.js, and MySQL. Currently engaged in the Amazon SmartBiz project, adept at handling both client and customer-side applications. Proficient in optimizing React code and utilizing technologies such as Express.js, Docker, CSS, SCSS, and HTML. Skilled in backend development with Python Flask and possesses knowledge of Data Structures and Algorithms (DSA) for efficient problem-solving. 💻🚀",
   item: [
     {
       company: "Divum Corporate Sevices Private Limited",
@@ -64,7 +64,7 @@ const education = {
   icon: cap,
   title: "My Education",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque possimus voluptas architecto molestiae reprehenderit omnis, error hic fuga inventore dicta officiis similique aut aliquam animi esse nostrum quaerat ipsum id!",
+    "I have successfully completed my Bachelor of Computer Science and Engineering with a first-class grade, achieving a GPA of 8.21 from EGS Pillay Engineering College, Nagapattinam.",
   item: [
     {
       institution: "E.G.S Pillay Engineering College",
@@ -77,7 +77,7 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, perferendis ipsum soluta tempore nesciunt vitae unde harum nostrum quis. Sint nemo officia fuga. Ipsum aliquid impedit adipisci perspiciatis eveniet exercitationem.",
+    "With a passion for crafting efficient and scalable web applications, I've developed a versatile skill set that spans both frontend and backend technologies. My expertise allows me to create visually appealing and highly functional user interfaces, while also ensuring robust and secure server-side operations.",
   skillList: [
     {
       icon: <FaHtml5 />,
