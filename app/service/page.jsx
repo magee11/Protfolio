@@ -7,32 +7,34 @@ const service = [
   {
     num: "01",
     title: "React JS Developer",
-    desceription:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil illo, assumenda vero voluptas facilis modi veniam natus sunt ratione neque esse quia quo corrupti temporibus soluta molestias vel ad eaque.",
-    href: "",
+    description:
+      "Experienced React JS developer with 2.5 years of hands-on experience. Proficient in React.js, Next.js, Redux, TypeScript, JavaScript, CSS3, and HTML5. Skilled in optimizing performance and delivering high-quality user interfaces.",
+    href: "/react-js-developer",
   },
   {
     num: "02",
     title: "Backend Developer",
-    desceription:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil illo, assumenda vero voluptas facilis modi veniam natus sunt ratione neque esse quia quo corrupti temporibus soluta molestias vel ad eaque.",
-    href: "",
+    description:
+      "Skilled Backend Developer with experience in Node.js, Java Spring Boot, and Python Flask. Adept at building and maintaining scalable server-side applications and working with databases like SQL and NoSQL.",
+    href: "/backend-developer",
   },
   {
     num: "03",
     title: "MERN Stack Developer",
-    desceription:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil illo, assumenda vero voluptas facilis modi veniam natus sunt ratione neque esse quia quo corrupti temporibus soluta molestias vel ad eaque.",
-    href: "",
+    description:
+      "Proficient MERN Stack Developer with expertise in MongoDB, Express.js, React.js, and Node.js. Capable of building full-stack applications from scratch and integrating frontend and backend seamlessly.",
+    href: "/mern-stack-developer",
   },
   {
     num: "04",
-    title: "SEO",
-    desceription:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil illo, assumenda vero voluptas facilis modi veniam natus sunt ratione neque esse quia quo corrupti temporibus soluta molestias vel ad eaque.",
-    href: "",
+    title: "SEO Specialist",
+    description:
+      "Experienced in optimizing websites for search engines using techniques like keyword research, on-page SEO, and link building. Focused on improving site rankings and enhancing online visibility.",
+    href: "/seo-specialist",
   },
 ];
+
+
 
 const Service = () => {
   return (
@@ -54,14 +56,14 @@ const Service = () => {
             return (
               <div key={index} className="flex-1 flex flex-col justify-center gap-6 group">
                 <div className="w-full flex  justify-between items-center">
-                  <div className="text-5xl font-extrabold group-hover:text-accent transition-all duration-500">{service.num}</div>
-                  <Link href={service.href} className="w-[50px] h-[50px] rounded-full bg-white text-black group-hover transition-all duration-500 flex justify-center items-center hover:-rotate-45">
+                  <div className="text-4xl font-extrabold group-hover:text-accent transition-all duration-500">{service.num}</div>
+                  <Link  href={service.href} className="w-[50px] h-[50px] rounded-full bg-white text-black group-hover transition-all duration-500 flex justify-center items-center hover:-rotate-45">
                     <BsArrowDownRight />
                   </Link>
                 </div>
                 {/* title  */}
-                  <h2 className=" text-[32px] text-white group-hover:text-accent transition-all duration-500 font-bold leading-none">{service.title}</h2>
-                  <p className="text-white/70 group-hover:text-white transition-all duration-500">{service.desceription}</p>
+                  <h2 className=" text-[22px] text-white group-hover:text-accent transition-all duration-500 font-bold leading-none">{service.title}</h2>
+                  <p className="text-white/70 group-hover:text-white transition-all duration-500">{service.description}</p>
                   <div className="border-b border-white/20 w-full"></div>
               </div>
             );

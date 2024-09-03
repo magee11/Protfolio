@@ -9,8 +9,8 @@ import { FiDownload } from "react-icons/fi";
 export default function Home() {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Magesh_Resume.pdf"; 
-    link.download = "Magesh_Resume.pdf"; 
+    link.href = "/Magesh_Resume.pdf";
+    link.download = "Magesh_Resume.pdf";
     link.click();
   };
 
@@ -26,13 +26,23 @@ export default function Home() {
             <br />
             <br />
             <span className="text-2xl">React JS Developer</span>
-            <p className="text-xs xl:text-[14px] max-w-[500px] text-white/80 mb-9 mt-2">
-              👨‍💻 Experienced React JS developer with 1+ years of full-time
-              experience. Proficient in AWS, Next JS, TypeScript, and backend
-              skills in Python, Flask, Node.js, Express JS and DSA. 💻🚀
+            <p className="text-[12px] xl:text-[14px] max-w-[500px] text-white/80 mb-9 mt-2">
+              Experienced React JS developer with 2.5 years of hands-on
+              experience. Proficient in AWS, Node.js, SQL, Next.js, Redux,
+              TypeScript, JavaScript, CSS3, HTML5, and Java Spring Boot.
+              Currently engaged in the Amazon SmartBiz project, adept at
+              handling both client and customer-side applications. Skilled at
+              optimizing performance through cutting-edge technologies and
+              methodologies. Additionally experienced in backend development
+              with Python Flask and knowledgeable in Data Structures and
+              Algorithms (DSA) for efficient problem-solving.
             </p>
+
             <div className="flex flex-col xl:flex-row items-center gap-8 mb-3">
-              <Button className="items-center flex gap-2" onClick={handleDownload}>
+              <Button
+                className="items-center flex gap-2"
+                onClick={handleDownload}
+              >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
               </Button>

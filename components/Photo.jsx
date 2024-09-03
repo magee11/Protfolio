@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import profilePic from "../public/images/photo.png";
+import profilePic from "../public/images/profile.png";
 
-const Photo = () => {
+const Photo = () => { 
   return (
     <div className="w-full h-full flex items-center justify-center relative pt-8 xl:pt-0">
       <motion.div
@@ -21,15 +21,16 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[300px] h-[300px] xl:w-[450px] xl:h-[450px] mix-blend-lighten relative z-10"
+          className="w-[320px] h-[320px] xl:w-[470px] xl:h-[470px] p-4 bg-white rounded-full flex items-center justify-center mix-blend-lighten relative z-10"
         >
           <Image
             src={profilePic}
             priority
+            style={{ borderRadius: '50%' }}
             quality="100"
             layout="fill"
             alt="Profile Picture"
-            className="object-contain"
+            className="object-cover"
           />
         </motion.div>
         <motion.svg

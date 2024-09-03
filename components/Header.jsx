@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import MobileNav from "./MobileNav";
 export const Header = () => {
   return (
-    <header className=" p-8  xl:py-12 text-white">
+    <header className=" p-8  xl:py-10 text-white">
       <div className="cointainer mx-auto flex justify-between items-center">
         <Link href="/">
           <h1 className="text-2xl xl:text-4xl font-semibold cursor-pointer">
