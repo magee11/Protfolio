@@ -9,6 +9,7 @@ const MobileNav = () => {
   const navLinks = [
     { name: "Home", url: "/" },
     { name: "Service", url: "/service" },
+    { name: "Projects", url: "/projects" },
     { name: "Resume", url: "/resume" },
     { name: "Contact", url: "/contact" },
   ];
