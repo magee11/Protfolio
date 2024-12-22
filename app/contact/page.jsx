@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/select";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
-import emailjs from 'emailjs-com';
 import { useState } from 'react';
 
 const info = [
@@ -36,23 +35,33 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSelectChange = (value) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      service: value,
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-      .then((result) => {
-        console.log(result.text);
-        alert("Message sent successfully!");
-      }, (error) => {
-        console.log(error.text);
-        alert("Failed to send message.");
-      });
+    const { firstName, lastName, email, phone, service, message } = formData;
+
+    // Construct the mailto link
+    const subject = `Inquiry: ${service}`;
+    const body = `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`;
+    const mailtoLink = `mailto:sample@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Open mailto popup
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -77,8 +86,7 @@ const Contact = () => {
             >
               <h3 className="text-4xl text-accent">Lets Work Together</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur voluptas
+                Fill out the form below to get in touch with us.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input
@@ -110,15 +118,21 @@ const Contact = () => {
                   onChange={handleChange}
                 />
               </div>
-              <Select name="service" onChange={handleChange} value={formData.service}>
+              <Select onValueChange={handleSelectChange}>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectItem value="React JS Developer">React JS Developer</SelectItem>
-                    <SelectItem value="MERN Stack Developer">MERN Stack Developer</SelectItem>
-                    <SelectItem value="Frontend Engineer">Frontend Engineer</SelectItem>
+                    <SelectItem value="React JS Developer">
+                      React JS Developer
+                    </SelectItem>
+                    <SelectItem value="MERN Stack Developer">
+                      MERN Stack Developer
+                    </SelectItem>
+                    <SelectItem value="Frontend Engineer">
+                      Frontend Engineer
+                    </SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -129,7 +143,11 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
               />
-              <Button size="md" className="max-w-40 flex items-center max-h-[45px]">
+              <Button
+                type="submit"
+                size="md"
+                className="max-w-40 flex items-center max-h-[45px]"
+              >
                 Send Message
               </Button>
             </form>

@@ -30,10 +30,10 @@ const about = {
     "",
   info: [
     { fieldName: "Name", fieldValue: "Magesh" },
-    { fieldName: "Stack", fieldValue: "Frontend Developer" },
+    { fieldName: "Stack", fieldValue: "Frontend Engineer" },
     { fieldName: "Email", fieldValue: "mageshmarch@gmail.com" },
     { fieldName: "Phone", fieldValue: "+91 9345236199" },
-    { fieldName: "Exprience", fieldValue: "1+ years" },
+    { fieldName: "Exprience", fieldValue: "2.5+ years" }, 
     { fieldName: "Nationality", fieldValue: "Indian" },
     { fieldName: "Languages", fieldValue: "English, Tamil" },
   ],
@@ -43,7 +43,7 @@ const exprience = {
   icon: batch,
   title: "My Exprience",
   description:
-    "👨‍💻 Experienced frontend developer with 2 years of industry expertise, including one year of internship and one year of full-time work. Specializing in React.js, Node.js, and MySQL. Currently engaged in the Amazon SmartBiz project, adept at handling both client and customer-side applications. Proficient in optimizing React code and utilizing technologies such as Express.js, Docker, CSS, SCSS, and HTML. Skilled in backend development with Python Flask and possesses knowledge of Data Structures and Algorithms (DSA) for efficient problem-solving. 💻🚀",
+    "Experienced React JS developer with 2.5 years of expertise in frontend and backend development. Proficient in React, Next.js, AWS, Node.js, Redux, TypeScript, Java Spring Boot, Python Flask, and SQL. Currently contributing to the Amazon SmartBiz project, optimizing client and customer applications. Skilled in performance optimization, modern technologies, and DSA for efficient problem-solving.",
   item: [
     {
       company: "Divum Corporate Sevices Private Limited",
